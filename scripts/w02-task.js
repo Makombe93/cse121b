@@ -28,17 +28,17 @@ imageElement.setAttribute('alt', `Profile image of ${fullName}`);
 
 
 /* Step 5 - Array */
-let foodList = ['Rice', 'Cheese', 'Pork', 'Pasta salad', 'Sherpherds pie','Chocolate', 'Fries'];
-foodElement.innerHTML = `${foodList}`;
+let food = ['Rice', 'Cheese', 'Pork', 'Pasta salad', 'Sherpherds pie','Chocolate', 'Fries'];
+foodElement.innerHTML = `${food}`;
 
-foodList.push('Biltong');
-foodElement.innerHTML += `<br>${foodList}`;
+food.push('Biltong');
+foodElement.innerHTML += `<br>${food}`;
 
-foodList.shift();
-foodElement.innerHTML = `<br>${foodList}`;
+food.shift();
+foodElement.innerHTML += `<br>${food.join('<br>')}`;
 
-foodList.pop();
-foodElement.innerHTML = `${foodList}`;
+food.pop();
+foodElement.innerHTML = `${food}`;
 
 
 
