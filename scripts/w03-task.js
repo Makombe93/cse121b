@@ -61,30 +61,30 @@ document.querySelector('#divideNumbers').addEventListener('click', divideNumbers
 const currentDate = new Date();
 const currentYear = currentDate.getFullYear();
 
-document.querySelector('#year').value = currentYear;
+document.querySelector('#year').innerHTML = currentYear;
 
 /* ARRAY METHODS - Functional Programming */
 /* Output Source Array */
 let numbersArray = [1,2,3,4,5,6,7,8,9,10,11,12,13];
 
-document.querySelector('#array').value = numbersArray.join(',');
+document.querySelector('#array').innerHTML = numbersArray.join(',');
 
 /* Output Odds Only Array */
 const oddNumbers = numbersArray.filter(number => number % 2 === 1);
-document.querySelector('#odds').value = oddNumbers.join(',');
+document.querySelector('#odds').innerHTML = oddNumbers.join(',');
 
 /* Output Evens Only Array */
 const evenNumbers = numbersArray.filter(number => number % 2 === 0);
-document.querySelector('#evens').value = evenNumbers.join(',');
+document.querySelector('#evens').innerHTML = evenNumbers.join(',');
 
 /* Output Sum of Org. Array */
 const sumOfArray = numbersArray.reduce((sum, number) => sum + number);
-document.querySelector('#sumOfArray').value = sumOfArray;
+document.querySelector('#sumOfArray').innerHTML = sumOfArray;
 
 /* Output Multiplied by 2 Array */
 const multipliedArray = numbersArray.map(number => number * 2);
-document.querySelector('#multiplied').value = multipliedArray.join(',');
+document.querySelector('#multiplied').innerHTML = multipliedArray.join(',');
 
 /* Output Sum of Multiplied by 2 Array */
 const sumOfMultiplied = numbersArray.map(number => number * 2).reduce((sum, number) => sum + number, 0);
-document.querySelector('#sumOfMultiplied').value = sumOfMultiplied;
+document.querySelector('#sumOfMultiplied').innerHTML = sumOfMultiplied;
